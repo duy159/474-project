@@ -3,10 +3,10 @@
 window._config = {
     cognito: {
         userPoolId: 'us-east-1_rKMB88n9E', // e.g. us-east-2_uXboG5pAb
-        userPoolClientId: '22me8ea927vsg2bad4u7q0890cq', // e.g. 25ddkmj4v6hfsfvruhpfi7n4hv
+        userPoolClientId: '6u2sai57jbpcpl4tl2q752dvrm', // e.g. 25ddkmj4v6hfsfvruhpfi7n4hv
         region: 'us-east-1' // e.g. us-east-2
     },
     api: {
-        invokeUrl: 'https://co2lv7wym7.execute-api.us-east-1.amazonaws.com/prod' // e.g. https://rc7nyt4tql.execute-api.us-west-2.amazonaws.com/prod',
+        invokeUrl: 'https://43cbf55d83.execute-api.us-east-1.amazonaws.com/prod' // e.g. https://rc7nyt4tql.execute-api.us-west-2.amazonaws.com/prod',
     }
 };

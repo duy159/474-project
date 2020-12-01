@@ -84,8 +84,8 @@ var WildRydes = window.WildRydes || {};
         var articleTitle = document.getElementById('nameUpdate').value;
         var categoryID = document.getElementById('roleUpdate').value;
         var tagID = document.getElementById('tagUpdate').value;
-        var content = document.getElementById('emailUpdate').value;
-        createArticle(articleTitle, categoryID, tagID, content);
+        let get_desc = $('#form_desc').val();
+        createArticle(articleTitle, categoryID, tagID, get_desc);
      
         event.preventDefault();
 

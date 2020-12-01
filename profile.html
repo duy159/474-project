@@ -47,48 +47,51 @@
 			</div>
 		</div>
 		<div class="col-md-8">
-			<p class="h4 mb-4 profile-header">Edit Profile</p>
+			<p class="h4 mb-4 profile-header">Article</p>
 			<form action="#!">
 				<div class="row">
 					<div class="col-md-4 font-weight-bold profile-input-header">
-						Name
+						Title
 					</div>
 					<div class="col-md-8">
-						<input type="text" id="form_name" class="form-control mb-4" placeholder="Name" readonly>
+						<input class="login-field" type="text" id="nameUpdate" placeholder="Write title..." pattern=".*">
 					</div>
 				</div>
 
 				<div class="row">
 					<div class="col-md-4 font-weight-bold profile-input-header">
-						Email
+						Category
 					</div>
 					<div class="col-md-8">
-						<input type="email" id="form_email" class="form-control mb-4" placeholder="E-mail" readonly>
+						<input class="login-field" type="text" id="roleUpdate" placeholder="e.g tekken, cooking etc..." pattern=".*">
 					</div>
 				</div>
 
 				<div class="row">
 					<div class="col-md-4 font-weight-bold profile-input-header">
-						Experiences
+						Tag
 					</div>
 					<div class="col-md-8">
 						<div class="form-group">
-							<textarea class="form-control rounded-0" id="form_exp" rows="3" placeholder="Experiences" readonly></textarea>
+							<input class="login-field" type="text" id="tagUpdate" placeholder="e.g. gaming, writing etc..." pattern=".*">
 						</div>					</div>
 				</div>
 
 				<div class="row">
 					<div class="col-md-4 font-weight-bold profile-input-header">
-						Description
+						Content
 					</div>
 					<div class="col-md-8">
 						<div class="form-group">
-							<textarea class="form-control rounded-0" id="form_desc" rows="3" placeholder="Description" readonly></textarea>
+							<textarea class="form-control rounded-0" id="form_desc" rows="3" placeholder="Write your content here..."></textarea>
 						</div>					</div>
 				</div>
 
 				<!-- Send button -->
-				<a class="btn btn-info float-right" href="./profile-edit.html">Edit</a>
+				
+				<input class="btn btn-info float-right" id="update" type="submit" value="Create">
+				<input type="submit" class="btn btn-info float-right" id="update1" value="View Article">
+        			<a href="/home.html"><button type="button" class="login-btn">Cancel</button></a>
 			</form>
 		</div>
 	</div>

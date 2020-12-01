@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>474 Project</title>
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    
-
-    <style>
-        body {font-family: Arial, Helvetica, sans-serif;}
-        * {box-sizing: border-box;}
-        
-        input[type=text], textarea {
+<head>
+	<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+  	<!-- jQuery library -->
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<!-- Popper JS -->
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  	<!-- Latest compiled JavaScript -->
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  	<link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/carousel/">
+  	<link href="css/carousel.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/profile.css" rel="stylesheet">
+  	<!-- <link href="css/editprofile.css" rel="stylesheet"> -->
+  	<title> Edit Profile </title>
+	<style>
+	input[type=text], textarea {
           width: 100%;
           padding: 12px;
           border: 1px solid #ccc;
@@ -64,54 +68,89 @@
           padding: 20px;
         }
         </style>
+</head>
 
-  </head>
+<body>
+	<header include-nav-html="./nav.html">
+  </header>
+	<main>
 
-  <body>
-    <h3>Create Arcticle</h3>
-
-    <div class="container">
-        <form>
-            	<label for="title">Title</label>
-            	<input class="login-field" type="text" id="nameUpdate" placeholder="Write title..." pattern=".*">
-
-        	<label for="category">Article Category</label>
-        	<input class="login-field" type="text" id="roleUpdate" placeholder="e.g tekken, cooking etc..." pattern=".*">
-
-        	<label for="tag">Tag</label>
-        	<input class="login-field" type="text" id="tagUpdate" placeholder="e.g. gaming, writing etc..." pattern=".*">
-	
-		<label for="tag">Content</label>
-            	<textarea class="form-control rounded-0" id="form_desc" rows="3" placeholder="Write your content here..."></textarea>
+	<div class="row col-md-5 profile-container">
 		
-	
-        <!--<label for="content">Content</label>
-        <input class="login-field" type="text "id="emailUpdate" placeholder="Write your contet here...">-->
-		
-        	<input class="login-btn" id="update" type="submit" value="Create">
-		<input type="submit" class="login-btn" id="update1" value="View Article">
-        	<a href="/home.html"><button type="button" class="login-btn">Cancel</button></a>
-    
-        </form>
-    </div>
-    <p id="demo"></p>	
+		<div class="col-md-8">
+			<p class="h4 mb-4 profile-header">Article</p>
+			<form action="#!">
+				<div class="row">
+					<div class="col-md-4 font-weight-bold profile-input-header">
+						Title
+					</div>
+					<div class="col-md-8">
+						<input class="login-field" type="text" id="nameUpdate" placeholder="Write title..." pattern=".*">
+					</div>
+				</div>
 
-    <script src="js/vendor/aws-cognito-sdk.min.js"></script>
-    <script src="js/vendor/amazon-cognito-identity.min.js"></script>
-    <script src="js/config.js"></script>
-    <script src="js/cognito-auth.js"></script>
-    <script src="js/article.js"></script>
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <!-- 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+				<div class="row">
+					<div class="col-md-4 font-weight-bold profile-input-header">
+						Category
+					</div>
+					<div class="col-md-8">
+						<input class="login-field" type="text" id="roleUpdate" placeholder="e.g tekken, cooking etc..." pattern=".*">
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4 font-weight-bold profile-input-header">
+						Tag
+					</div>
+					<div class="col-md-8">
+						<div class="form-group">
+							<input class="login-field" type="text" id="tagUpdate" placeholder="e.g. gaming, writing etc..." pattern=".*">
+						</div>					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4 font-weight-bold profile-input-header">
+						Content
+					</div>
+					<div class="col-md-8">
+						<div class="form-group">
+							<textarea class="form-control rounded-0" id="form_desc" rows="3" placeholder="Write your content here..."></textarea>
+						</div>					</div>
+				</div>
+
+				<!-- Send button -->
+				
+				<input class="login-btn" id="update" type="submit" value="Create">
+        			<a href="/home.html"><button type="button" class="login-btn">Cancel</button></a>
+			</form>
+		</div>
+	</div>
+
+
+	<!-- FOOTER -->
+	<footer class="container">
+		<p class="float-right"><a href="#">Back to top</a></p>
+		<p>&copy; 2020 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+	</footer>
+
+
+	</main>
+</body>
+ <script src="js/vendor/aws-cognito-sdk.min.js"></script>
+ <script src="js/vendor/amazon-cognito-identity.min.js"></script>
+ <script src="js/config.js"></script>
+ <script src="js/cognito-auth.js"></script>
+ <script src="js/editprofile.js"></script>
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!--   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="../assets/dist/js/bootstrap.bundle.min.js"></script> -->
 
+  <script src="js/nav.js"></script>
+  <script>includeHTML();</script> 
 
-    <script src="js/nav.js"></script> 
-    <script src="js/home.js"></script>
-
-
-
-  </body>
+<!--  <script src="js/nav.js"></script>
+ <script>includeHTML();</script>  
+ <script src="js/home.js"></script>
+ <script src="js/category.js"></script> -->
 </html>
